@@ -7,7 +7,7 @@ s(t+dt) = s(t) + ∫t, t+dt (v(i) + w))di
 
 ## Run
 ```console
-python3 point_mass_3d.py
+python3 .py
 ```
 Simulation stops immediately at ground impact (z ≤ 0)
 
