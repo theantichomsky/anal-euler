@@ -31,17 +31,17 @@ All parameters are at the top of the script:
 For okbuddyeuler.py, the parameters are also at the top of the script:
 
 
--Aircraft: m, rho, A, C_d, C_L
-
--Power: power_hover, power_climb, power_cruise, power_descent, prop_eff
-
--Battery: battery_kwh, reserve_min
-
--Flight profile: v_cruise, v_climb_h, climb_rate, descent_rate, cruise_alt_agl, hover_alt_agl
-
--Wind: v_wind — constant 3D vector, applied only in the position step
-
--Route: origin_id, dest_id — keys into the nodes dict
+    -Aircraft: m, rho, A, C_d, C_L
+    
+    -Power: power_hover, power_climb, power_cruise, power_descent, prop_eff
+    
+    -Battery: battery_kwh, reserve_min
+    
+    -Flight profile: v_cruise, v_climb_h, climb_rate, descent_rate, cruise_alt_agl, hover_alt_agl
+    
+    -Wind: v_wind — constant 3D vector, applied only in the position step
+    
+    -Route: origin_id, dest_id — keys into the nodes dict
 
 
 eulerqueer.py / eulershitter.py: Thrust is set to zero but can be added to sum_forces(). Position update uses the trapezoidal rule to reduce drift.
