@@ -1,4 +1,4 @@
-# anal-euler
+# Euler's Approximation
 Tool for solving a recursive function v' and then let v'' be a constant velocity vector such that we have some position function s(t) st
 s(t+dt) = s(t) + ∫t, t+dt (v(i) + w))di
 -> ∫t, t+dt (v(i)+w))di = (v' + w) x dt
