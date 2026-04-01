@@ -15,7 +15,7 @@ Projectile scripts stop at ground impact (z ≤ 0). okbuddyeuler.py runs through
 
 There are three scripts in the repo: one that simulates a projectile in a 1D plane, another in a 3D plane, and a third (okbuddyeuler.py) that simulates a full eVTOL mission profile between vertiport nodes.
 
-All parameters are at the top of the script:
+For eulerprojectile.py and eulertest1.py, all parameters are at the top of the script:
 
     -Physical: m, rho, A, C_d, C_L
     
@@ -44,5 +44,5 @@ For okbuddyeuler.py, the parameters are also at the top of the script:
     -Route: origin_id, dest_id — keys into the nodes dict
 
 
-eulerqueer.py / eulershitter.py: Thrust is set to zero but can be added to sum_forces(). Position update uses the trapezoidal rule to reduce drift.
+eulerprojectile.py / eulertest1.py: Thrust is set to zero but can be added to sum_forces(). Position update uses the trapezoidal rule to reduce drift.
 okbuddyeuler.py: Uses angle-based force decomposition (θ, φ, γ) with thrust active across five flight phases. Position update uses forward Euler. Outputs three plots: mission_result.png, mission_3d.png, mission_map.png.
